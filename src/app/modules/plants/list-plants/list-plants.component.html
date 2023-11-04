@@ -1,0 +1,24 @@
+<table id="plants-table" class="table">
+  <thead class="table-dark">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Nombre Comun</th>
+    <th scope="col">Tipo</th>
+    <th scope="col">Clima</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let plant of plants">
+    <th scope="row">{{ plant.id }}</th>
+    <td>{{ plant.nombre_comun }}</td>
+    <td>{{ plant.tipo }}</td>
+    <td>{{ plant.clima }}</td>
+  </tr>
+  </tbody>
+</table>
+
+<br>
+Total plantas de interior: {{ interiorPlants }}
+<br>
+Total plantas de exterior: {{ exteriorPlants }}
+<br>
